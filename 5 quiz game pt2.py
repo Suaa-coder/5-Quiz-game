@@ -1,15 +1,12 @@
 # Python quiz game
 
-questions= ()
-
-options = (" Which country is home to the official language of Swahili?: ",
+questions = (" Which country is home to the official language of Swahili?: ",
            "Which of the following is a widely spoken language in Switzerland?:",
            "Which country is the setting for Gabriel Garcia Marquez's famous novel One Hundred Years of Solitude?:",
            "Which language is spoken by the most people worldwide as their first language? ",
            "Who is the author of the novel Pride and Predjudice?:")
 
-
-options= (("A. Kenya", "B. India", "C. Argentina","D. Spain"),
+options = (("A. Kenya", "B. India", "C. Argentina","D. Spain"),
            ("A. Dutch","B. French","C. Portoguese","D. finnish"),
            ("A. Peru","B. Brazi","C. Colombia","D. Mexico"),
            ("A. English","B. Hindi","C.Spanish","D. Mandarin Chinese"),
@@ -24,7 +21,7 @@ for question in questions:
     print("----------------------")
     print(question)
 
-   quess = input ("Enter (A,B,C,D): ").upper()
+   guess = input ("Enter (A,B,C,D): ").upper()
    guesses.append(guess)
    if guess == answers[question_num]:
       score += 1
